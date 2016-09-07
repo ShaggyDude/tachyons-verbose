@@ -1,45 +1,26 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
 
-/*
+@media (--breakpoint-extra-small) {
+.borderwidth-0-xs { border-width: 0; }
+.borderwidth-1-xs { border-width: .125rem; }
+.borderwidth-2-xs { border-width: .25rem; }
+.borderwidth-3-xs { border-width: .5rem; }
+.borderwidth-4-xs { border-width: .75rem; }
+.borderwidth-5-xs { border-width: 1rem; }
 
-   BORDER WIDTHS
+.bordertopwidth-0-xs { border-top-width: 0; }
+.borderrightwidth-0-xs { border-right-width: 0; }
+.borderbottomwidth-0-xs { border-bottom-width: 0; }
+.borderleftwidth-0-xs { border-left-width: 0; }
+}
 
-   Modifiers:
-     0 = 0 width border
-     1 = 1st step in border-width scale
-     2 = 2nd step in border-width scale
-     3 = 3rd step in border-width scale
-     4 = 4th step in border-width scale
-     5 = 5th step in border-width scale
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-
-.borderwidth-0 { border-width: 0; }
-.borderwidth-1 { border-width: .125rem; }
-.borderwidth-2 { border-width: .25rem; }
-.borderwidth-3 { border-width: .5rem; }
-.borderwidth-4 { border-width: .75rem; }
-.borderwidth-5 { border-width: 1rem; }
-
-.bordertopwidth-0 { border-top-width: 0; }
-.borderrightwidth-0 { border-right-width: 0; }
-.borderbottomwidth-0 { border-bottom-width: 0; }
-.borderleftwidth-0 { border-left-width: 0; }
-
-@media (--breakpoint-not-small) {
+@media (--breakpoint-small) {
   .borderwidth-0-ns { border-width: 0; }
   .borderwidth-1-ns { border-width: .125rem; }
   .borderwidth-2-ns { border-width: .25rem; }
   .borderwidth-3-ns { border-width: .5rem; }
   .borderwidth-4-ns { border-width: .75rem; }
   .borderwidth-5-ns { border-width: 1rem; }
+
   .bordertopwidth-0-ns { border-top-width: 0; }
   .borderrightwidth-0-ns { border-right-width: 0; }
   .borderbottomwidth-0-ns { border-bottom-width: 0; }
@@ -53,6 +34,7 @@
   .borderwidth-3-m { border-width: .5rem; }
   .borderwidth-4-m { border-width: .75rem; }
   .borderwidth-5-m { border-width: 1rem; }
+
   .bordertopwidth-0-m { border-top-width: 0; }
   .borderrightwidth-0-m { border-right-width: 0; }
   .borderbottomwidth-0-m { border-bottom-width: 0; }
@@ -66,6 +48,7 @@
   .borderwidth-3-l { border-width: .5rem; }
   .borderwidth-4-l { border-width: .75rem; }
   .borderwidth-5-l { border-width: 1rem; }
+
   .bordertopwidth-0-l { border-top-width: 0; }
   .borderrightwidth-0-l { border-right-width: 0; }
   .borderbottomwidth-0-l { border-bottom-width: 0; }

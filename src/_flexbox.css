@@ -1,53 +1,31 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
 
-/*
 
-FLEXBOX
+.display--flex { display: flex; }
+.display--inline-flex { display: inline-flex; }
 
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
- */
-
-.flex, .display-flex { display: flex; }
-.inlineflex, .display-inlineflex { display: inline-flex; }
-
-/* 1. Fix for Chrome 44 bug.
-https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto {
   flex: 1 1 auto;
-  min-width: 0; /* 1 */
-  min-height: 0; /* 1 */
+  min-width: 0;
+  min-height: 0;
 }
 
 .flex-none { flex: none; }
 
-.flex-column,
-.flexdirection-column   { flex-direction: column; }
-.flex-row,
-.flexdirection-row      { flex-direction: row; }
-.flex-wrap,
-.flexwrap-wrap          { flex-wrap: wrap; }
+.flex-direction--column   { flex-direction: column; }
+.flex-direction--row      { flex-direction: row; }
+.flex-wrap--wrap          { flex-wrap: wrap; }
 
-.alignitems-flexstart,
-.alignitems-start       { align-items: flex-start; }
-.alignitems-flexend,
-.alignitems-end         { align-items: flex-end; }
-.alignitems-center      { align-items: center; }
-.alignitems-baseline    { align-items: baseline; }
-.alignitems-stretch     { align-items: stretch; }
+.align-items--flex-start  { align-items: flex-start; }
+.align-items--flex-end    { align-items: flex-end; }
+.align-items--center      { align-items: center; }
+.align-items--baseline    { align-items: baseline; }
+.align-items--stretch     { align-items: stretch; }
 
-.alignself-flexstart,
-.alignself-start        { align-self: flex-start; }
-.alignself-flexend,
-.alignself-end          { align-self: flex-end; }
-.alignself-center       { align-self: center; }
-.alignself-baseline     { align-self: baseline; }
-.alignself-stretch      { align-self: stretch; }
+.align-self--flex-start   { align-self: flex-start; }
+.align-self--flexend      { align-self: flex-end; }
+.align-self--center       { align-self: center; }
+.align-self--baseline     { align-self: baseline; }
+.align-self--stretch      { align-self: stretch; }
 
 .justifycontent-flexstart, 
 .justifycontent-start         { justify-content: flex-start; }
@@ -88,8 +66,8 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .display-inlineflex-ns { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
-    min-width: 0; /* 1 */
-    min-height: 0; /* 1 */
+    min-width: 0;
+    min-height: 0;
   }
   .flex-none-ns              { flex: none; }
   .flex-column-ns,
@@ -153,8 +131,8 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .display-inlineflex-m { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
-    min-width: 0; /* 1 */
-    min-height: 0; /* 1 */
+    min-width: 0;
+    min-height: 0;
   }
   .flex-none-m              { flex: none; }
   .flex-column-m,
@@ -218,8 +196,8 @@ https://code.google.com/p/chromium/issues/detail?id=506893 */
   .display-inlineflex-l { display: inline-flex; }
   .flex-auto {
     flex: 1 1 auto;
-    min-width: 0; /* 1 */
-    min-height: 0; /* 1 */
+    min-width: 0;
+    min-height: 0;
   }
   .flex-none-l              { flex: none; }
   .flex-column-l,

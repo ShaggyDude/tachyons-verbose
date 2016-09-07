@@ -1,72 +1,48 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
 
-/*
+@media (--breakpoint-extra-small) {
+  .display--none-xs {               display: none; }
 
-   DISPLAY
+  .display--inline-xs {             display: inline; }
+  .display--block-xs {              display: block; }
+  .display--inlineblock-xs {        display: inline-block; }
+  .display--inlinetable-xs {        display: inline-table; }
+  .display--table-xs {              display: table; }
+  .display--table-cell-xs {         display: table-cell; }
+  .display--table-row-xs {          display: table-row; }
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-
-.display-none {               display: none; }
-.display-inline {             display: inline; }
-.display-block {              display: block; }
-.display-inlineblock {        display: inline-block; }
-.display-inlinetable {        display: inline-table; }
-.display-table {              display: table; }
-.display-tablecell {          display: table-cell; }
-.display-tablerow {           display: table-row; }
-.display-tablerowgroup {      display: table-row-group; }
-.display-tablecolumn {        display: table-column; }
-.display-tablecolumngroup {   display: table-column-group; }
-
-/*
-  This will set table to full width and then
-  all cells will be equal width
-*/
-.displaytable-fixed,
-.tablelayout-fixed {
-  table-layout: fixed;
-  width: 100%;
+  .table-layout--fixed-xs {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
-
 @media (--breakpoint-not-small) {
-  .display-none-ns {              display: none; }
-  .display-inline-ns {            display: inline; }
-  .display-block-ns {             display: block; }
-  .display-inlineblock-ns {       display: inline-block; }
-  .display-inlinetable-ns {       display: inline-table; }
-  .display-table-ns {             display: table; }
-  .display-tablecell-ns {         display: table-cell; }
-  .display-tablerow-ns {          display: table-row; }
-  .display-tablerowgroup-ns {     display: table-row-group; }
-  .display-tablecolumn-ns {       display: table-column; }
-  .display-tablecolumngroup-ns {  display: table-column-group; }
+  .display--none-ns {              display: none; }
 
-  .displaytable-fixed-ns,
-  .tablelayout-fixed-ns {
+  .display--inline-ns {            display: inline; }
+  .display--block-ns {             display: block; }
+  .display--inlineblock-ns {       display: inline-block; }
+  .display--inlinetable-ns {       display: inline-table; }
+  .display--table-ns {             display: table; }
+  .display--tablecell-ns {         display: table-cell; }
+  .display--tablerow-ns {          display: table-row; }
+
+  .displaytable--fixed-ns,
+  .tablelayout--fixed-ns {
     table-layout: fixed;
     width: 100%;
   }
 }
 
 @media (--breakpoint-medium) {
-  .display-none-m {              display: none; }
-  .display-inline-m {            display: inline; }
+  .display--none-m {             display: none; }
+
+  .display--inline-m {           display: inline; }
   .display-block-m {             display: block; }
   .display-inlineblock-m {       display: inline-block; }
   .display-inlinetable-m {       display: inline-table; }
   .display-table-m {             display: table; }
   .display-tablecell-m {         display: table-cell; }
   .display-tablerow-m {          display: table-row; }
-  .display-tablerowgroup-m {     display: table-row-group; }
-  .display-tablecolumn-m {       display: table-column; }
-  .display-tablecolumngroup-m {  display: table-column-group; }
 
   .displaytable-fixed-m,
   .tablelayout-fixed-m {
@@ -76,7 +52,8 @@
 }
 
 @media (--breakpoint-large) {
-  .display-none-l {              display: none; }
+  .display--none-l {             display: none; }
+
   .display-inline-l {            display: inline; }
   .display-block-l {             display: block; }
   .display-inlineblock-l {       display: inline-block; }
@@ -84,9 +61,6 @@
   .display-table-l {             display: table; }
   .display-tablecell-l {         display: table-cell; }
   .display-tablerow-l {          display: table-row; }
-  .display-tablerowgroup-l {     display: table-row-group; }
-  .display-tablecolumn-l {       display: table-column; }
-  .display-tablecolumngroup-l {  display: table-column-group; }
 
   .displaytable-fixed-l,
   .tablelayout-fixed-l {

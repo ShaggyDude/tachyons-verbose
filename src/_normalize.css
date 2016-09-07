@@ -9,20 +9,16 @@ pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
+a { background-color: transparent; }
 a:active,
 a:hover {
   outline-width: 0;
 }
+
 b { font-weight: normal; }
 s { text-decoration: none; }
 i { font-style: normal; }
-b, s, body, div { 
-  box-sizing: border-box;
-}
+
 code {
   font-family: monospace, monospace;
   font-size: 1em;

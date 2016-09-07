@@ -1,31 +1,23 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
 
-/*
-
-   CLEARFIX
-
-*/
-
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix:before,
 .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 .clearfix {       *zoom: 1; }
 
-.clear-left { clear: left; }
-.clear-right { clear: right; }
-.clear-both { clear: both; }
-.clear-none { clear: none; }
 
-@media (--breakpoint-not-small) {
-  .clear-left-ns { clear: left; }
-  .clear-right-ns { clear: right; }
-  .clear-both-ns { clear: both; }
-  .clear-none-ns { clear: none; }
+@media (--breakpoint-extra-small) {
+  .clear-left-xs { clear: left; }
+  .clear-right-xs { clear: right; }
+  .clear-both-xs { clear: both; }
+  .clear-none-xs { clear: none; }
+}
+
+@media (--breakpoint-small) {
+  .clear-left-s { clear: left; }
+  .clear-right-s { clear: right; }
+  .clear-both-s { clear: both; }
+  .clear-none-s { clear: none; }
 }
 
 @media (--breakpoint-medium) {
@@ -41,3 +33,10 @@
   .clear-both-l { clear: both; }
   .clear-none-l { clear: none; }
 }
+
+/*@media (--breakpoint-extra-large) {
+  .clear-left-xl { clear: left; }
+  .clear-right-xl { clear: right; }
+  .clear-both-xl { clear: both; }
+  .clear-none-xl { clear: none; }
+}*/
