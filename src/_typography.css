@@ -1,68 +1,54 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
 
-/*
-
-   TYPOGRAPHY
-
-*/
-
-
-
-/* Measure is limited to ~66 characters */
-.measure {
-  max-width: 30em;
-}
-
-/* Measure is limited to ~80 characters */
-.measure-wide, .measurewide {
-  max-width: 34em;
-}
-
-/* Measure is limited to ~45 characters */
-.measure-narrow, .measurenarrow {
-  max-width: 20em;
-}
-
-/* Book paragraph style - paragraphs are indented with no vertical spacing. */
-.indent {
-  text-indent: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.small-caps, .smallcaps, .fontvariant-smallcaps {
-  font-variant: small-caps;
-}
-
-/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
-
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media (--breakpoint-not-small) {
-  .measure-ns  {
+@media (--breakpoint-extra-small) {
+  .measure-xs  {
     max-width: 30em;
   }
-  .measure-wide-ns, .measurewide-ns {
+  .measure-wide-xs {
     max-width: 34em;
   }
-  .measure-narrow-ns, .measurenarrow-ns {
+  .measure-narrow-xs {
     max-width: 20em;
   }
-  .indent-ns {
+
+  .indent-xs {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-ns, .smallcaps-ns, .fontvariant-smallcaps-ns {
+
+  .font-variant--small-caps-xs {
     font-variant: small-caps;
   }
-  .truncate-ns {
+  
+  .truncate-xs {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (--breakpoint-small) {
+  .measure-s  {
+    max-width: 30em;
+  }
+  .measure-wide-s {
+    max-width: 34em;
+  }
+  .measure-narrow-s {
+    max-width: 20em;
+  }
+
+  .indent-s {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .font-variant--small-caps-s {
+    font-variant: small-caps;
+  }
+
+  .truncate-s {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -70,23 +56,26 @@
 }
 
 @media (--breakpoint-medium) {
-  .measure-m {
+  .measure-m  {
     max-width: 30em;
   }
-  .measure-wide-m, .measurewide-m {
+  .measure-wide-m {
     max-width: 34em;
   }
-  .measure-narrow-m, .measurenarrow-m {
+  .measure-narrow-m {
     max-width: 20em;
   }
+
   .indent-m {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-m, .smallcaps-m, .fontvariant-smallcaps-m {
+
+  .font-variant--small-caps-m {
     font-variant: small-caps;
   }
+
   .truncate-m {
     white-space: nowrap;
     overflow: hidden;
@@ -95,23 +84,26 @@
 }
 
 @media (--breakpoint-large) {
-  .measure-l {
+  .measure-l  {
     max-width: 30em;
   }
-  .measure-wide-l, .measurewide-l {
+  .measure-wide-l {
     max-width: 34em;
   }
-  .measure-narrow-l, .measurenarrow-l {
+  .measure-narrow-l {
     max-width: 20em;
   }
+
   .indent-l {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .small-caps-l, .smallcaps-l, .fontvariant-smallcaps-l {
+
+  .font-variant--small-caps-l {
     font-variant: small-caps;
   }
+
   .truncate-l {
     white-space: nowrap;
     overflow: hidden;
