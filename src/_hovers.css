@@ -1,12 +1,4 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-/*
 
-  HOVER EFFECTS
-
-
-*/
 
 /*
 
@@ -34,8 +26,6 @@
   child class will be hidden and displayed on hover or focus.
 
   <div class="hidechild">
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
     <div class="child"> Hidden until hover or focus </div>
     <div class="child"> Hidden until hover or focus </div>
   </div>

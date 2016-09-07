@@ -1,14 +1,12 @@
 /* TACHYONS v4.0.8 | github.com/tachyons-css/tachyons */
 
 
-
 /* External Library Includes */
-@import './_normalize';
+@import './--normalize';
 
 
 /* Variables */
-@import './--colors';
-@import './--media-queries';
+@import './--variables';
 
 
 /* Modules */
@@ -57,8 +55,5 @@
 @import './_styles';
 
 
-
-/* Debugging */
 /*@import './_debug_children';*/
-/* Uncomment out the  line below and rebuild the css if you want to use pesticide.io to debug layout .*/
 /* @import './_debug'; */
