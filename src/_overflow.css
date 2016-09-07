@@ -67,3 +67,20 @@
   .overflow-y--scroll-l { overflow-y: scroll; }
   .overflow-y--auto-l { overflow-y: auto; }
 }
+
+/*@media (--breakpoint-extra-large) {
+  .overflow--visible-xl { overflow: visible; }
+  .overflow--hidden-xl { overflow: hidden; }
+  .overflow--scroll-xl { overflow: scroll; }
+  .overflow--auto-xl { overflow: auto; }
+
+  .overflow-x--visible-xl { overflow-x: visible; }
+  .overflow-x--hidden-xl { overflow-x: hidden; }
+  .overflow-x--scroll-xl { overflow-x: scroll; }
+  .overflow-x--auto-xl { overflow-x: auto; }
+
+  .overflow-y--visible-xl { overflow-y: visible; }
+  .overflow-y--hidden-xl { overflow-y: hidden; }
+  .overflow-y--scroll-xl { overflow-y: scroll; }
+  .overflow-y--auto-xl { overflow-y: auto; }
+}*/
