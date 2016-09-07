@@ -7,8 +7,11 @@
 
 */
 
+@media (--breakpoint-extra-small) {
 
-@media (--breakpoint-not-small) {
+}
+
+@media (--breakpoint-small) {
 
 }
 
@@ -19,4 +22,8 @@
 @media (--breakpoint-large) {
 
 }
+
+/*@media (--breakpoint-extra-large) {
+
+}*/
 
