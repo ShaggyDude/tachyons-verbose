@@ -2,31 +2,26 @@
 
    UTILITIES
 
-*/
+   Should be broken out into 
 
-/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
- * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
- * Make sure there are no height and width attributes on the embedded media.
- * Adapted from: https://github.com/suitcss/components-flex-embed
+   * aspect ratio
+   * overflow
+   * center content -  usually pared with max-width
+
+
  *
- * Example:
- *
- * <div class="aspect-ratio aspect-ratio--16x9">
- *  <iframe class="aspect-ratio--object"></iframe>
+ * <div class="aspect-ratio-container is-16x9">
+ *  <iframe class="aspect-ratio"></iframe>
  * </div>
  *
  * */
 
-.aspect-ratio, .aspectratio {
+.aspect-ratio-container { /* <= not sure this is even needed? */
   height: 0;
   position: relative;
 }
 
-.aspect-ratio-16x9, .aspsectratio-16x9 { padding-bottom: 56.25%; }
-.aspect-ratio-4x3, .aspectratio-4x3 {  padding-bottom: 75%; }
-.aspect-ratio-8x5, .aspectratio-8x5 {  padding-bottom: 62.5%; }
-
-.aspect-ratio-object, .aspectratio-object {
+.aspect-ratio {
     position: absolute;
     top: 0;
     right: 0;
@@ -34,14 +29,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 9;
 }
 
-.overflow-container, .overflowy-scroll {
+.is-1x2   { padding-top: 56.25%; }
+.is-16x9  { padding-top: 56.25%; }
+.is-4x3   { padding-top: 75%   ; }
+.is-8x5   { padding-top: 62.5% ; }
+
+
+
+
+
+
+.overflow-y--scroll {
   overflow-y: scroll;
 }
 
-.center, .marginhorizontal-auto {
+.margin-horizontal--auto {
   margin-right: auto;
   margin-left: auto;
 }
