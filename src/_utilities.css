@@ -2,7 +2,10 @@
 
    UTILITIES
 
-   Should be broken out into 
+
+   TODO: !!!!!
+
+   Should be broken out into 'helpers not utilities as all of tachyons are utilities...'
 
    * aspect ratio
    * overflow
@@ -10,14 +13,14 @@
 
 
  *
- * <div class="aspect-ratio-container is-16x9">
- *  <iframe class="aspect-ratio"></iframe>
- * </div>
+ * <b class="aspect-ratio-container is-16x9">
+ *  <img class="aspect-ratio"></img>
+ * </b>
  *
  * */
 
-.aspect-ratio-container { /* <= not sure this is even needed? */
-  height: 0;
+.aspect-ratio-container { 
+  height: 0; /* <= not sure this is even needed? */
   position: relative;
 }
 
@@ -27,15 +30,18 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 9;
 }
 
-.is-1x2   { padding-top: 56.25%; }
-.is-16x9  { padding-top: 56.25%; }
-.is-4x3   { padding-top: 75%   ; }
+.is-2x1   { padding-top: 50%;    }
+.is-1x2   { padding-top: 200%;   }
+.is-4x3   { padding-top: 75%;    }
 .is-8x5   { padding-top: 62.5% ; }
+.is-16x9  { padding-top: 56.25%; }
+
+ 
+
+
 
 
 
