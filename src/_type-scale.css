@@ -1,14 +1,14 @@
 
 
 @media (--breakpoint-extra-small) {
-  .f0-xs { font-size: 6rem; }
-  .f1-xs { font-size: 3rem; }
-  .f2-xs { font-size: 2.25rem; }
-  .f3-xs { font-size: 1.5rem; }
-  .f4-xs { font-size: 1.25rem; }
-  .f5-xs { font-size: 1rem; }
-  .f6-xs { font-size: .875rem; }
-  .f7-xs { font-size: .75rem; }
+  .f0 { font-size: 6rem; }
+  .f1 { font-size: 3rem; }
+  .f2 { font-size: 2.25rem; }
+  .f3 { font-size: 1.5rem; }
+  .f4 { font-size: 1.25rem; }
+  .f5 { font-size: 1rem; }
+  .f6 { font-size: .875rem; }
+  .f7 { font-size: .75rem; }
 }
 
 @media (--breakpoint-small) {

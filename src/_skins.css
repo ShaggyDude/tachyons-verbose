@@ -1,52 +1,58 @@
 
 
 /* color assignments */
+/* should be generated from color variables */
 
-.color--black--90 {      color: var(--black-90); }
-.color--black--80 {      color: var(--black-80); }
-.color--black--70 {      color: var(--black-70); }
-.color--black--60 {      color: var(--black-60); }
-.color--black--50 {      color: var(--black-50); }
-.color--black--40 {      color: var(--black-40); }
-.color--black--30 {      color: var(--black-30); }
-.color--black--20 {      color: var(--black-20); }
-.color--black--10 {      color: var(--black-10); }
-.color--black--05 {      color: var(--black-05); }
+.color--black90 {      color: var(--black-90); }
+.color--black80 {      color: var(--black-80); }
+.color--black70 {      color: var(--black-70); }
+.color--black60 {      color: var(--black-60); }
+.color--black50 {      color: var(--black-50); }
+.color--black40 {      color: var(--black-40); }
+.color--black30 {      color: var(--black-30); }
+.color--black20 {      color: var(--black-20); }
+.color--black10 {      color: var(--black-10); }
 
+.color--black05 {      color: var(--black-05); }
+.color--black025 {      color: var(--black-025); }
+.color--black0125 {      color: var(--black-0125); }
 
-.color--white--90 {      color: var(--white-90); }
-.color--white--80 {      color: var(--white-80); }
-.color--white--70 {      color: var(--white-70); }
-.color--white--60 {      color: var(--white-60); }
-.color--white--50 {      color: var(--white-50); }
-.color--white--40 {      color: var(--white-40); }
-.color--white--30 {      color: var(--white-30); }
-.color--white--20 {      color: var(--white-20); }
-.color--white--10 {      color: var(--white-10); }
+.color--white90 {      color: var(--white-90); }
+.color--white80 {      color: var(--white-80); }
+.color--white70 {      color: var(--white-70); }
+.color--white60 {      color: var(--white-60); }
+.color--white50 {      color: var(--white-50); }
+.color--white40 {      color: var(--white-40); }
+.color--white30 {      color: var(--white-30); }
+.color--white20 {      color: var(--white-20); }
+.color--white10 {      color: var(--white-10); }
 
-.color--black {          color: var(--black); }
-.color--nearblack {      color: var(--near-black);}
-.color--darkgray {       color: var(--dark-gray); }
-.color--midgray {        color: var(--mid-gray); }
-.color--gray {           color: var(--gray); }
-.color--silver {         color: var(--silver); }
-.color--lightsilver {    color: var(--light-silver); }
-.color--lightgray {      color: var(--light-gray); }
-.color--moongray {       color: var(--moon-gray); }
-.color--nearwhite {      color: var(--near-white); }
-.color--white {          color: var(--white); }
+.color--white05 {		color: var(--white-05); }
+.color--white025 {		color: var(--white-025); }
+.color--white0125 {     color: var(--white-0125); }
 
+.color--black {         color: var(--black); }
+.color--nearblack {     color: var(--near-black);}
+.color--darkgray {      color: var(--dark-gray); }
+.color--midgray {       color: var(--mid-gray); }
+.color--gray {          color: var(--gray); }
+.color--silver {        color: var(--silver); }
+.color--lightsilver {   color: var(--light-silver); }
+.color--lightgray {     color: var(--light-gray); }
+.color--moongray {      color: var(--moon-gray); }
+.color--nearwhite {     color: var(--near-white); }
+.color--white {         color: var(--white); }
 
-.color--dark-red {       color: var(--dark-red); }
-.color--red {            color: var(--red); }
-.color--lightred {       color: var(--light-red); }
+.color--dark-red {      color: var(--dark-red); }
+.color--red {           color: var(--red); }
+.color--lightred {      color: var(--light-red); }
 
-.color--orange {         color: var(--orange); }
+.color--orange {        color: var(--orange); }
 
-.color--gold {           color: var(--gold); }
-.color--yellow {         color: var(--yellow); }
-.color--washedyellow {   color: var(--washed-yellow); }
-.color--lightyellow {    color: var(--light-yellow); }
+.color--gold {          color: var(--gold); }
+.color--yellow {        color: var(--yellow); }
+.color--washedyellow {  color: var(--washed-yellow); }
+.color--lightyellow {   color: var(--light-yellow); }
 
 .color--purple {         color: var(--purple); }
 .color--lightpurple {    color: var(--light-purple); }
@@ -67,7 +73,6 @@
 .color--washedblue {     color: var(--washed-blue); }
 .color--washedgreen {    color: var(--washed-green); }
 
-/* background colors */
 
 .background-color--black90 {    background-color: var(--black-90); }
 .background-color--black80 {    background-color: var(--black-80); }
@@ -89,7 +94,6 @@
 .background-color--white20 {    background-color: var(--white-20); }
 .background-color--white10 {    background-color: var(--white-10); }
 
-/* Background colors */
 
 .background-color--black {          background-color: var(--black); }
 .background-color--near-black {     background-color: var(--near-black); }
@@ -128,59 +132,3 @@
 .background-color--light-yellow {   background-color: var(--light-yellow); }
 .background-color--light-red {      background-color: var(--light-red); }
 
-/* Skins for pseudoclasses */
-
-/* 
-  NOTE: i think this hover model is broken bad. !!!!!!!!!!!!!
-  it should be an extendor class that is like -has-hovers
-*/
-
-.hover--black:hover {             color: var(--black); }
-.hover--near-black:hover {        color: var(--near-black); }
-.hover--dark-gray:hover {         color: var(--dark-gray); }
-.hover--mid-gray:hover {          color: var(--mid-gray); }
-.hover--gray:hover {              color: var(--gray); }
-.hover--silver:hover {            color: var(--silver); }
-.hover--lightsilver:hover {       color: var(--light-silver); }
-.hover--moongray:hover {          color: var(--moon-gray); }
-.hover--lightgray:hover{          color: var(--light-gray); }
-.hover--nearwhite:hover {         color: var(--near-white); }
-.hover--white:hover {             color: var(--white); }
-
-.background-color-hover--black:hover {          background-color: var(--black); }
-.background-color-hover--nearblack:hover {      background-color: var(--near-black); }
-.background-color-hover--dark-gray:hover {      background-color: var(--dark-gray); }
-.background-color-hover--mid-gray:hover {       background-color: var(--mid-gray); }
-.background-color-hover--gray:hover {           background-color: var(--gray); }
-.background-color-hover--silver:hover {         background-color: var(--silver); }
-.background-color-hover--light-silver:hover {   background-color: var(--light-silver); }
-.background-color-hover--moon-gray:hover {      background-color: var(--moon-gray); }
-.background-color-hover--lightgray:hover {      background-color: var(--light-gray); }
-.background-color-hover--near-white:hover {     background-color: var(--near-white); }
-.background-color-hover--white:hover {          background-color: var(--white); }
-
-.background-color-hover--transparent:hover {    background-color: var(--transparent); }
-
-.background-color-hover--dark-red:hover {       background-color: var(--dark-red); }
-.background-color-hover--red:hover {            background-color: var(--red); }
-.background-color-hover--orange:hover {         background-color: var(--orange); }
-.background-color-hover--gold:hover {           background-color: var(--gold); }
-.background-color-hover--yellow:hover {         background-color: var(--yellow); }
-.background-color-hover--purple:hover {         background-color: var(--purple); }
-.background-color-hover--light-purple:hover {   background-color: var(--light-purple); }
-.background-color-hover--hot-pink:hover {       background-color:  var(--hot-pink); }
-.background-color-hover--dark-pink:hover {      background-color: var(--dark-pink); }
-.background-color-hover--pink:hover {           background-color: var(--pink); }
-.background-color-hover--dark-green:hover {     background-color: var(--dark-green); }
-.background-color-hover--green:hover {          background-color: var(--green); }
-.background-color-hover--navy:hover {           background-color: var(--navy); }
-.background-color-hover--darkblue:hover {       background-color: var(--dark-blue); }
-.background-color-hover--blue:hover {           background-color: var(--blue); }
-.background-color-hover--light-blue:hover {     background-color: var(--light-blue); }
-.background-color-hover--lightest-blue:hover {  background-color: var(--lightest-blue); }
-.background-color-hover--washed-blue:hover {    background-color: var(--washed-blue); }
-.background-color-hover--washed-green:hover {   background-color: var(--washed-green); }
-.background-color-hover--washedyellow:hover {   background-color: var(--washed-yellow); }
-.background-color-hover--lightpink:hover {      background-color: var(--light-pink); }
-.background-color-hover--lightyellow:hover {    background-color: var(--light-yellow); }
-.background-color-hover--lightred:hover {       background-color: var(--light-red); }

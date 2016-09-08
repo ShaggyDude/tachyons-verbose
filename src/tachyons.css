@@ -47,12 +47,10 @@
 @import './_type-scale';
 @import './_typography';
 @import './_utilities';
-@import './_visibility';
 @import './_white-space';
 @import './_vertical-align';
 @import './_z-index';
 @import './_hovers';
-@import './_styles';
 
 
 /*@import './_debug_children';*/
