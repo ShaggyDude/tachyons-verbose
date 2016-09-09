@@ -2,8 +2,8 @@
 
 
 @media (--breakpoint-extra-small) {
-  .background-size--cover-xs { background-size: cover; }
-  .background-size--contain-xs { background-size: contain; }
+  .background-size--cover { background-size: cover; }
+  .background-size--contain { background-size: contain; }
 }
 
 @media (--breakpoint-small) {
@@ -16,12 +16,14 @@
   .background-size--contain-m { background-size: contain; }
 }
 
-/*@media (--breakpoint-large) {
+@media (--breakpoint-large) {
   .background-size--cover-l { background-size: cover; }
   .background-size--contain-l { background-size: contain; }
 }
 
+/*
 @media (--breakpoint-extra-large) {
   .background-size--cover-xl { background-size: cover; }
   .background-size--contain-xl { background-size: contain; }
-}*/
+}
+*/

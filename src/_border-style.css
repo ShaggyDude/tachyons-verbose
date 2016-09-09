@@ -1,9 +1,9 @@
 
 @media (--breakpoint-extra-small) {
-  .borderstyle-solid-xs {  border-style: solid; }
-  .borderstyle-dotted-xs { border-style: dotted; }
-  .borderstyle-dashed-xs { border-style: dashed; }
-  .borderstyle-none-xs {   border-style: none; }
+  .borderstyle-solid {  border-style: solid; }
+  .borderstyle-dotted { border-style: dotted; }
+  .borderstyle-dashed { border-style: dashed; }
+  .borderstyle-none {   border-style: none; }
 }
 
 @media (--breakpoint-small) {

@@ -1,0 +1,421 @@
+
+
+<style>
+	html {
+		font-family: sans-serif;
+		font-size: 10px; /* metric rem */
+		line-height: 20px;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+	}
+	body {
+		margin: 0;
+	}
+	br {
+		line-height: 20px;
+	}
+	main {
+		display: block;
+	}
+	pre {
+		font-family: monospace, monospace;
+		font-size: 1em;
+	}
+	a {
+		background-color: transparent;
+		-webkit-text-decoration-skip: objects;
+	}
+	a:active,
+	a:hover {
+		outline-width: 0;
+	}
+	b {
+		font-weight: normal;
+		display: block;
+	}
+	s {
+		text-decoration: none;
+	}
+	i {
+		font-style: normal;
+	}
+
+	b, s, body, div { 
+		box-sizing: border-box;
+	}
+
+	code {
+		font-family: monospace, monospace;
+		font-size: 1em;
+	}
+	img {
+		border-style: none;
+	}
+	svg:not(:root) {
+		overflow: hidden;
+	}
+	button,
+	input,
+	optgroup,
+	select,
+	textarea {
+		font-family: sans-serif;
+		font-size: 100%;
+		margin: 0;
+	}
+	button,
+	input {
+		overflow: visible;
+	}
+	button,
+	select {
+		text-transform: none;
+	}
+	button,
+	html [type='button'],
+	[type='reset'],
+	[type='submit'] {
+		-webkit-appearance: button;
+	}
+	/* TODO: I added this.. revisit.. */
+	textarea,
+	input { 
+		outline: none;
+	}
+	textarea:focus,
+	input:focus { 
+		outline: 1px solid pink;
+	}
+	legend {
+		box-sizing: border-box;
+		color: inherit;
+		display: table;
+		max-width: 100%;
+		padding: 0;
+		white-space: normal;
+	}
+	progress {
+		vertical-align: baseline;
+	}
+	textarea {
+		overflow: auto;
+	}
+	[type='checkbox'],
+	[type='radio'] {
+		box-sizing: border-box;
+		padding: 0;
+	}
+	[type='number']::-webkit-inner-spin-button,
+	[type='number']::-webkit-outer-spin-button {
+		height: auto;
+	}
+	[type='search'] {
+		-webkit-appearance: textfield;
+		outline-offset: -2px;
+	}
+	[type='search']::-webkit-search-cancel-button,
+	[type='search']::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
+	::-webkit-file-upload-button {
+		-webkit-appearance: button; 
+		font: inherit; 
+	}
+	menu {
+		display: block;
+	}
+	summary {
+		display: list-item;
+	}
+	template,
+	[hidden] {
+		display: none;
+	}
+
+
+
+
+	/* flamework */
+	.flex {
+		display: flex;
+	}
+
+	.margin-bottom--1 {
+		margin-bottom: 1rem;
+	}
+
+
+	.padding--1 {
+		padding: 1rem;
+	}
+
+	.rounded--999 {
+		border-radius: 999rem;
+	}
+
+	.square--1 {
+		width: 1rem;
+		height: 1rem;
+	}
+	.square--2 {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.background--black {
+		background: #000;
+	}
+
+
+
+
+@media (min-width: 600px) {
+	.display--table {
+		display: table;
+		width: 100%;
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.2); /* outlines for borders */
+	}
+	.display--table-row {
+		display: table-row;
+	}
+	.display--table-cell {
+		display: table-cell;
+		padding: .5rem;
+	}
+}
+
+
+
+
+
+	ol {
+		margin: 0;
+	}
+
+
+	body {
+		background-image: linear-gradient(rgba(0,0,0,.15) 0, rgba(0,0,0,0) 1px);
+		background-repeat: repeat-y;
+		background-size: 100% 10px;
+
+		margin-left: auto;
+		margin-right: auto;
+		font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		color: #555;
+		font-weight: 300;
+		max-width: 100rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid #f00;
+		margin: 20px 20px 19px;
+	}
+
+	hr + hr {
+		margin-bottom: 18px;
+	}
+
+	p, form {
+		margin-top: 0;
+
+		font-size: 18px;
+		line-height: 20px;
+
+		padding: 20px;
+		margin-bottom: 20px;
+
+		background: rgba(255,255,255,.6);
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.2); /* outlines for borders */
+		border-radius: 4px;
+	}
+	p:first-child {
+		margin-top: 20px;
+	}
+	input,
+	button {
+		display: inline-flex;
+		width: 100%;
+		padding: 10px 20px; /* need to see where extra spacing is from */
+		font-size: 16px;
+		line-height: 10px;
+		height: 40px;
+
+
+		background-color: #f9f9f9;
+		background-clip: padding-box;
+		border: 0;
+		box-shadow: inset 0 0 0 1px #ddd;
+		border-radius: .25rem;
+	}
+	button {
+		cursor: pointer;
+		background-color: #fff;
+		xxcolor: #fff;
+	}
+	input:not(:last-child),
+	button:not(:last-child) {
+		margin-right: 1rem;
+	}
+	ol {
+		counter-reset: counter;
+		list-style: none;
+		padding: none;
+		line-height: 30px;
+	}
+	ol li:before {
+		content: counter(counter);
+		counter-increment: counter;
+		color: #ccc;
+		display: inline-block;
+		padding-right: 10px;
+	}
+</style>
+
+
+<div>
+
+	<d>
+		<p style='font-size: 100px; line-height: 100px'>
+			<b>100px/100px</b>
+			The quick gray abba dabba
+		</p>
+
+		<hr>
+
+		<p style='font-size: 69px; line-height: 70px'>
+			<b>69px/70px</b>
+			The quick gray abba dabba
+		</p>
+
+		<p style='font-size: 61px; line-height: 60px'>
+			<b>61px/60px</b>
+			The quick g Lorem ipsum dolor sit amet, consectetur
+		</p>
+
+		<p style='font-size: 49px; line-height: 60px'>
+			<b>49px/60px</b>
+			The quick g Lorem ipsum dolor sit amet, consectetur
+		</p>
+
+		<hr>
+		<hr>
+
+		<p style='font-size: 42px; line-height: 50px'>
+			<b>42px/50px</b>
+			The quick g Lorem ipsum dolor sit amet, consectetur
+		</p>
+
+		<p style='font-size: 38px; line-height: 40px'>
+			<b>38px/40px</b>
+			The quick g Lorem ipsum dolor sit amet, consectetur
+		</p>
+
+		<hr>
+
+		<form>
+			<ol class='padding--1'>
+				<li>
+					Build everything on the baseline 16px/24px
+				</li>
+				<li>
+					Use flex for all grids
+				</li>
+				<li>
+					Use gradients for borders to avoid throwing off the baseline
+				</li>
+
+				<li>
+					Use verbose tachyons or <s class='strong'>build your own</s>
+				</li>
+				<li>
+					Use tools to generate Components from particles.css
+				</li>
+				<li>
+					Make colors variable AND background aware OR have light and dark styles
+				</li>
+			</ol>
+			<b class='flex margin-bottom--1'>
+				<input type='text' placeholder='First Name'>
+				<input type='text' placeholder='Last Name'>
+			</b>
+			<b class='flex'>
+				<button class="rounded--999">Go</button>
+				<button>Paperless</button>
+				<button>Now</button>
+			</b>
+		</form>
+
+		<hr>
+
+
+		<p style='font-size: 24px; line-height: 30px'>
+			<b>24px/30px</b>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit asperiores, quas, ratione nemo possimus alias nihil molestias quia voluptatibus labore adipisci, necessitatibus? Rem inventore minima, tempora. Saepe, sapiente soluta.
+		</p>
+
+
+		<p style='font-size: 16px; line-height: 20px'>
+			<b>16px/20px</b>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit asperiores, quas, ratione nemo possimus alias nihil molestias quia voluptatibus labore adipisci, necessitatibus? Rem inventore minima, tempora. Saepe, sapiente soluta.
+		</p>
+
+		<p style='font-size: 14px; line-height: 20px'>
+			<b>14px/20px</b>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit asperiores, quas, ratione nemo possimus alias nihil molestias quia voluptatibus labore adipisci, necessitatibus? Rem inventore minima, tempora. Saepe, sapiente soluta.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit asperiores, quas, ratione nemo possimus alias nihil molestias quia voluptatibus labore adipisci, necessitatibus? Rem inventore minima, tempora. Saepe, sapiente soluta.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odit asperiores, quas, ratione nemo possimus alias nihil molestias quia voluptatibus labore adipisci, necessitatibus? Rem inventore minima, tempora. Saepe, sapiente soluta.
+		</p>
+
+
+
+
+		<b class="display--table">
+			<b class="display--table-row">
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+			</b>
+
+						<b class="display--table-row">
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+			</b>
+
+						<b class="display--table-row">
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+				<b class="display--table-cell">
+					Cell
+				</b>
+			</b>
+		</b>
+
+
+
+	</d>
+
+</div>
+
+
+
+
